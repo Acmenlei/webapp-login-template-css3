@@ -1,0 +1,113 @@
+@import "../iconfont/iconfont.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    background: #f8f8f8;
+    position: fixed;
+}
+
+.maske {
+    width: 120vw;
+    height: 80%;
+    background: #30E41F;
+    position: absolute;
+    top: -30%;
+    left: -10%;
+    border-radius: 45%;
+    animation: rotate 2s infinite alternate linear;
+}
+
+h2 {
+    font-size: 20px;
+    color: #F8F8F8;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+h2 p {
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: .6rem;
+    width: 120%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-15deg)
+    }
+
+    to {
+        transform: rotate(15deg)
+    }
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50vh;
+    height: 80vh;
+}
+
+.login input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+    padding: .5rem .2rem;
+    margin-top: 1rem;
+    transition: all .5s;
+    text-indent: .5em;
+}
+
+.login label {
+    width: 65%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.login label i {
+    position: absolute;
+    left: .4rem;
+    color: #555;
+    top: 50%;
+    transform: translateY(-10%);
+    font-size: 1rem;
+    transition: color .5s;
+}
+
+.login input:focus {
+    border: 2px solid #30E41F;
+}
+
+.login input:focus+i {
+    color: #30E41F;
+}
+
+.login input[type=button] {
+    background: #30E41F;
+    color: #F8F8F8;
+    border: none;
+    text-indent: 0;
+    width: 65%;
+}
+
+.login input[type=button]:hover {
+    background: rgb(48, 158, 31);
+}
+
+.login input::placeholder,
+.login input {
+    text-indent: 2em;
+}

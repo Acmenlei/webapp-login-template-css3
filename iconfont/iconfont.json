@@ -1,0 +1,23 @@
+{
+  "id": "2274754",
+  "name": "别具风格的登陆",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "831582",
+      "name": "username",
+      "font_class": "username",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "851473",
+      "name": "password",
+      "font_class": "password",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    }
+  ]
+}
